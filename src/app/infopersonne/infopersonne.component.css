@@ -1,0 +1,16 @@
+img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+h2 {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.information {
+  text-align: center;
+}
