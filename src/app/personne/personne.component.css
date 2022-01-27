@@ -19,6 +19,8 @@
   box-shadow: 1px 1px 3px 1px white;
 }
 
+/*Permet de dire que celui est la classe qui va predominer la page*/
+
 :host {
   width: 100%;
   text-align: center;
