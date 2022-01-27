@@ -1,0 +1,35 @@
+<div class="items">
+  <div class="gauche">
+    <h1>Moins de 40</h1>
+    <div *ngIf="moins40.length === 0">Aucune personne a était trouvé</div>
+    <div>
+      <app-personne
+        [personne]="ligne"
+        *ngFor="let ligne of moins40"
+      ></app-personne>
+      <p>---</p>
+    </div>
+  </div>
+  <div class="milieu">
+    <h1>Entre 40 et 60</h1>
+    <div *ngIf="age60and40.length === 0">Aucune personne a était trouvé</div>
+    <div>
+      <app-personne
+        [personne]="ligne"
+        *ngFor="let ligne of age60and40"
+      ></app-personne>
+      <p>---</p>
+    </div>
+  </div>
+  <div class="droite">
+    <h1>Plus de 60</h1>
+    <div *ngIf="plusde60.length === 0">Aucune personne a était trouvé</div>
+    <div>
+      <app-personne
+        [personne]="ligne"
+        *ngFor="let ligne of plusde60"
+      ></app-personne>
+      <p>---</p>
+    </div>
+  </div>
+</div>

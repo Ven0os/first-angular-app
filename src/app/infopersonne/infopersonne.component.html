@@ -1,0 +1,26 @@
+<img src="{{ resultats.picture.large }}" />
+<br />
+{{ resultats.gender | uppercase }}, {{ resultats.name.title }}
+{{ resultats.name.first }}
+{{ resultats.name.last }}
+<p>
+  Rue: {{ resultats.location.street.number }}
+  {{ resultats.location.street.name }}
+</p>
+<p>
+  Localisation : {{ resultats.location.city }}, {{ resultats.location.state }}
+  {{ resultats.location.country }}
+</p>
+<p>Postcode : {{ resultats.location.postcode }}</p>
+<p>
+  Latitude / Longitude : {{ resultats.location.coordinates.latitude }},{{
+    resultats.location.coordinates.longitude
+  }}
+</p>
+<p>
+  Fuseau Horaire : {{ resultats.location.timezone.offset }} --
+  {{ resultats.location.timezone.description }}
+</p>
+<p>Âge : {{ resultats.dob.age }} Ans</p>
+<p>Entrée il y'a {{ resultats.registered.age }} ans</p>
+<p>Email: {{ resultats.email }}</p>

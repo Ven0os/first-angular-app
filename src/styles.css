@@ -1,0 +1,14 @@
+body {
+  color: white;
+  font-size: 20px;
+}
+
+.img {
+  width: 103vw;
+  height: 103vh;
+  background-image: url("assets/bcgrnd.jpeg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: -1;
+  position: fixed;
+}
